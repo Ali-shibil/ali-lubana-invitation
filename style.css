@@ -1,0 +1,374 @@
+/* ====================================
+   ALI SHIBIL & LUBANA
+   PREMIUM NIKKAH INVITATION
+   STYLE.CSS - PART 1
+==================================== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+font-family:'Poppins',sans-serif;
+background:
+linear-gradient(180deg,#faf8f3,#efe4ca);
+color:#3f311d;
+overflow-x:hidden;
+}
+/* Scrollbar */
+::-webkit-scrollbar{
+width:8px;
+}
+::-webkit-scrollbar-track{
+background:#f6f2e9;
+}
+::-webkit-scrollbar-thumb{
+background:#b89343;
+border-radius:20px;
+}
+/* Loader */
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+linear-gradient(145deg,#2a1f10,#4b3916);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+transition:1s;
+}
+.loader-content{
+text-align:center;
+animation:fadeZoom 2s infinite;
+}
+.loader-content h2{
+font-family:'Cinzel',serif;
+font-size:42px;
+color:#f8e7af;
+}
+.loader-heart{
+font-size:36px;
+margin:20px;
+color:#d8b25d;
+animation:pulse 1.5s infinite;
+}
+/* Opening Screen */
+#opening{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:
+linear-gradient(
+180deg,
+#faf8f2,
+#f0e4c8
+);
+}
+.arabic{
+font-family:'Amiri',serif;
+font-size:42px;
+color:#a57c28;
+line-height:2;
+margin-bottom:25px;
+}
+#opening p{
+letter-spacing:2px;
+font-size:15px;
+color:#6d5b42;
+line-height:2;
+}
+#openBtn{
+margin-top:45px;
+padding:16px 42px;
+background:#b78d39;
+color:white;
+border:none;
+border-radius:50px;
+font-size:18px;
+cursor:pointer;
+transition:.4s;
+box-shadow:
+0 10px 25px rgba(0,0,0,.2);
+}
+#openBtn:hover{
+background:#9d782f;
+transform:translateY(-5px);
+box-shadow:
+0 15px 35px rgba(0,0,0,.25);
+}
+/* Hero */
+#hero{
+padding:100px 20px;
+text-align:center;
+}
+#hero h4{
+letter-spacing:3px;
+font-size:15px;
+color:#9a782d;
+margin-bottom:40px;
+}
+#hero h1{
+font-family:'Cinzel',serif;
+font-size:62px;
+font-weight:700;
+color:#75511b;
+margin:15px;
+}
+#hero span{
+font-size:30px;
+color:#b89446;
+}
+/* Divider */
+.divider{
+width:100px;
+height:2px;
+background:#c6a24c;
+margin:40px auto;
+}
+/* ====================================
+   STYLE.CSS - PART 2
+   Countdown & Details
+==================================== */
+/* Countdown Section */
+#countdown{
+padding:90px 20px;
+text-align:center;
+background:linear-gradient(180deg,#fffdf9,#f6edd8);
+}
+#countdown h2{
+font-family:'Cinzel',serif;
+font-size:40px;
+color:#7b5b23;
+margin-bottom:45px;
+}
+#timer{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+#timer div{
+width:140px;
+height:140px;
+border-radius:22px;
+background:rgba(255,255,255,.65);
+backdrop-filter:blur(14px);
+border:1px solid rgba(201,162,76,.45);
+box-shadow:
+0 12px 30px rgba(0,0,0,.12);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+transition:.35s;
+}
+#timer div:hover{
+transform:translateY(-8px);
+box-shadow:
+0 20px 45px rgba(0,0,0,.18);
+}
+#timer span{
+font-size:42px;
+font-weight:700;
+color:#a47a28;
+}
+#timer p{
+margin-top:10px;
+font-size:15px;
+letter-spacing:1px;
+color:#6b5b43;
+}
+/* Details */
+#details{
+padding:100px 20px;
+text-align:center;
+}
+#details h2{
+font-family:'Cinzel',serif;
+font-size:42px;
+color:#7c5d24;
+margin-bottom:50px;
+}
+.card{
+max-width:700px;
+margin:28px auto;
+padding:35px;
+border-radius:24px;
+background:rgba(255,255,255,.78);
+backdrop-filter:blur(18px);
+border:1px solid rgba(196,160,74,.35);
+box-shadow:
+0 18px 45px rgba(0,0,0,.12);
+transition:.35s;
+}
+.card:hover{
+transform:translateY(-6px);
+}
+.card h3{
+color:#9c7526;
+font-size:26px;
+margin-bottom:18px;
+}
+.card p{
+font-size:18px;
+line-height:1.9;
+color:#4d4131;
+}
+.mapBtn{
+display:inline-block;
+margin-top:28px;
+padding:14px 34px;
+border-radius:40px;
+text-decoration:none;
+background:#b48d39;
+color:white;
+font-weight:500;
+transition:.35s;
+}
+.mapBtn:hover{
+background:#9d782f;
+transform:scale(1.05);
+}
+/* Blessing */
+#blessing{
+padding:100px 30px;
+text-align:center;
+background:linear-gradient(180deg,#f7f2e7,#efe1bf);
+}
+#blessing h2{
+font-family:'Cinzel',serif;
+font-size:34px;
+color:#7a5922;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+/* ====================================
+   STYLE.CSS - PART 2
+   Countdown & Details
+==================================== */
+/* Countdown Section */
+#countdown{
+padding:90px 20px;
+text-align:center;
+background:linear-gradient(180deg,#fffdf9,#f6edd8);
+}
+#countdown h2{
+font-family:'Cinzel',serif;
+font-size:40px;
+color:#7b5b23;
+margin-bottom:45px;
+}
+#timer{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+#timer div{
+width:140px;
+height:140px;
+border-radius:22px;
+background:rgba(255,255,255,.65);
+backdrop-filter:blur(14px);
+border:1px solid rgba(201,162,76,.45);
+box-shadow:
+0 12px 30px rgba(0,0,0,.12);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+transition:.35s;
+}
+#timer div:hover{
+transform:translateY(-8px);
+box-shadow:
+0 20px 45px rgba(0,0,0,.18);
+}
+#timer span{
+font-size:42px;
+font-weight:700;
+color:#a47a28;
+}
+#timer p{
+margin-top:10px;
+font-size:15px;
+letter-spacing:1px;
+color:#6b5b43;
+}
+/* Details */
+#details{
+padding:100px 20px;
+text-align:center;
+}
+#details h2{
+font-family:'Cinzel',serif;
+font-size:42px;
+color:#7c5d24;
+margin-bottom:50px;
+}
+.card{
+max-width:700px;
+margin:28px auto;
+padding:35px;
+border-radius:24px;
+background:rgba(255,255,255,.78);
+backdrop-filter:blur(18px);
+border:1px solid rgba(196,160,74,.35);
+box-shadow:
+0 18px 45px rgba(0,0,0,.12);
+transition:.35s;
+}
+.card:hover{
+transform:translateY(-6px);
+}
+.card h3{
+color:#9c7526;
+font-size:26px;
+margin-bottom:18px;
+}
+.card p{
+font-size:18px;
+line-height:1.9;
+color:#4d4131;
+}
+.mapBtn{
+display:inline-block;
+margin-top:28px;
+padding:14px 34px;
+border-radius:40px;
+text-decoration:none;
+background:#b48d39;
+color:white;
+font-weight:500;
+transition:.35s;
+}
+.mapBtn:hover{
+background:#9d782f;
+transform:scale(1.05);
+}
+/* Blessing */
+#blessing{
+padding:100px 30px;
+text-align:center;
+background:linear-gradient(180deg,#f7f2e7,#efe1bf);
+}
+#blessing h2{
+font-family:'Cinzel',serif;
+font-size:34px;
+color:#7a5922;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
