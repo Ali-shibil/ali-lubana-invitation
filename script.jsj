@@ -1,0 +1,144 @@
+/* =========================================
+   ALI SHIBIL & LUBANA
+   SCRIPT.JS - PART 1
+========================================= */
+// Loading Screen
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("loader").style.opacity = "0";
+        document.getElementById("loader").style.visibility = "hidden";
+    }, 1800);
+});
+// Opening Screen
+const openBtn = document.getElementById("openBtn");
+const opening = document.getElementById("opening");
+openBtn.addEventListener("click", function () {
+    opening.style.display = "none";
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+// Countdown Timer
+const weddingDate = new Date(
+"July 09, 2026 10:00:00"
+).getTime();
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+    if (distance < 0) {
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+        return;
+    }
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (distance %
+        (1000 * 60 * 60 * 24))
+        /
+        (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+        (distance %
+        (1000 * 60 * 60))
+        /
+        (1000 * 60)
+    );
+    const seconds = Math.floor(
+        (distance %
+        (1000 * 60))
+        /
+        1000
+    );
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+// Scroll Reveal
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", function(){
+sections.forEach(function(section){
+const top = section.getBoundingClientRect().top;
+if(top < window.innerHeight - 120){
+section.style.opacity = "1";
+section.style.transform = "translateY(0)";
+}
+});
+});
+/* =========================================
+   ALI SHIBIL & LUBANA
+   SCRIPT.JS - PART 1
+========================================= */
+// Loading Screen
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("loader").style.opacity = "0";
+        document.getElementById("loader").style.visibility = "hidden";
+    }, 1800);
+});
+// Opening Screen
+const openBtn = document.getElementById("openBtn");
+const opening = document.getElementById("opening");
+openBtn.addEventListener("click", function () {
+    opening.style.display = "none";
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+// Countdown Timer
+const weddingDate = new Date(
+"July 09, 2026 10:00:00"
+).getTime();
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+    if (distance < 0) {
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+        return;
+    }
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (distance %
+        (1000 * 60 * 60 * 24))
+        /
+        (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+        (distance %
+        (1000 * 60 * 60))
+        /
+        (1000 * 60)
+    );
+    const seconds = Math.floor(
+        (distance %
+        (1000 * 60))
+        /
+        1000
+    );
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+// Scroll Reveal
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", function(){
+sections.forEach(function(section){
+const top = section.getBoundingClientRect().top;
+if(top < window.innerHeight - 120){
+section.style.opacity = "1";
+section.style.transform = "translateY(0)";
+}
+});
+});
